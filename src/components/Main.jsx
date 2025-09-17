@@ -5,11 +5,11 @@ export default function Main() {
     const [meme, setMeme] = useState({
         topText: "One does not simply",
         bottomText: "Walk into Mordor",
-        imageUrl: "http://i.imgflip.com/1bij.jpg"
+        imageUrl: "https://i.imgflip.com/1bij.jpg"
     });
 
     const [allMemes, setAllMemes] = useState([])
-
+   
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
